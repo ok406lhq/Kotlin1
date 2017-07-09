@@ -1,6 +1,6 @@
-#Kotlin第二学
-###基础语法
-#####怎么定义一个类
+Kotlin第二学
+基础语法
+怎么定义一个类
 使用class关键字即可
 
 	class MainActivity{
@@ -17,13 +17,13 @@
 		}
 	}
 
-#####类继承
+类继承
 默认任何类都是基础继承自Any（与java中的Object类似），但是我们可以继承其它类。所有的类默认都是不可继承的（final），所以我们只能继承那些明确声明open或者abstract的类：
 
 	open class Animals(name:String)
 	class Person(name:String,id:Int):Animals(name)
 
-#####函数
+函数
 函数，即方法，可以用fun关键字来定义：
 	
 	fun onCreate(savedInstanceState：Bundle?){
@@ -38,7 +38,7 @@
 	fun add(x:Int,y:int):Int = x + y
 这个时候你应该注意到了，所有的函数体里面都没有分号";"隔开，你当然也可以自己加上去，没问题的
 
-######函数参数
+函数参数
 在Kotlin中，我们可以在函数传参时给参数设定默认值，这样可以使得方法传参更具灵活性
 
 	fun toast(message：String，length：Int = Toast.LENGTH_SHORT){
@@ -49,7 +49,7 @@
 	toast(“Hello”)
 	toast(“Hello”,Toast.LENGTH_SHORT)
 
-######String模板表达式
+String模板表达式
 你可以在String中直接使用模板表达式，它可以帮助你很简单地在静态值和变量的基础上编写复杂的String，比如：
 
 	fun niceToast(message:String,tag:String = javaClass<MainActivi().getSimpleName(),
